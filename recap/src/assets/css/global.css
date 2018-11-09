@@ -1,0 +1,53 @@
+html, body {
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+#root, .page {
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    background: #1abc9c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gallery img{
+    float: left;
+    padding: 2px;
+}
+
+.gallery-detail {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .gallery-detail .centered {
+
+} */
