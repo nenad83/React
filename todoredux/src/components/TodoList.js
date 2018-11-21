@@ -6,13 +6,22 @@ export class TodoList extends React.Component {
             <div className="todo-list">
                 <ol>
                     {
+                        this.props.todos.length !== 0
+
+                        ?
+
                         this.props.todos.map((todo, i) => {
                             return(
                                 <li key={i}>
-                                    <h2>{todo}</h2>
+                                    <span>{todo}</span>
+                                    <button type="button" onClick={()=> this.props.removeTodo(todo)}>X</button>
                                 </li>
                             )
                         })
+
+                        :
+
+                        <span>Todo List empty</span>
                     }
 
                 </ol>
